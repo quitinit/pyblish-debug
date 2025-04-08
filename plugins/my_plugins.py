@@ -22,7 +22,4 @@ class HelloWorldValidator(pyblish.api.InstancePlugin):
         print("validating")
         debugpy.breakpoint()
         assert instance.data.get("greeting") == "hello world"
-
-
-
         assert instance.data.get("greeting") == instance.data.get("greeting"), "Greeting is not the same"
